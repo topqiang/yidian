@@ -1,0 +1,158 @@
+@charset "utf-8";
+.content {
+  background: #f5f8fa;
+}
+.pore {
+  position: relative;
+}
+.poab {
+  position: absolute;
+}
+.bgz {
+  background: #f6701f;
+}
+.colz {
+  color: #f6701f;
+}
+.fr {
+  float: right;
+}
+.fl {
+  float: left;
+}
+.bgza {
+  background: rgba(246, 112, 31, 0.8);
+}
+.bgb {
+  background: #fff;
+}
+.colb {
+  color: #FFFFFF;
+}
+.disf {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+.fs-10 {
+  font-size: 10px;
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-16 {
+  font-size: 16px;
+}
+header {
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+}
+header div.local {
+  color: #FFFFFF;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 50px;
+  background: url('../img/locb.png') 13px center no-repeat;
+  background-size: 24px 24px;
+}
+.label {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 50px;
+  background: url('../img/jian.png') 13px center no-repeat;
+  background-size: 24px 24px;
+}
+.focus1 {
+  background: rgba(0, 0, 0, 0) !important;
+}
+.focus1 > div {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.focus1 span {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+}
+.focus1 span.current {
+  background: #fff;
+}
+.xqnav {
+  padding: 20px 0px;
+  color: #666666;
+  font-size: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+  background: #fff;
+}
+.xqnav > div {
+  width: 25%;
+}
+.xqnav > div img {
+  width: 60%;
+  margin-left: 20%;
+}
+.xqnav > div span {
+  display: block;
+  text-align: center;
+}
+.ad {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+.ad > div {
+  width: 50%;
+}
+.ad > div img {
+  width: 100%;
+}
+.goods {
+  background: #fff;
+  padding-left: 20px;
+}
+.goods .good {
+  padding: 10px 0px;
+  height: 120px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.goods .good .imgbag {
+  float: left;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  padding: 3px;
+  border: 1px solid #e6e6e6;
+}
+.goods .good .imgbag img {
+  height: 100%;
+  width: 100%;
+}
+.goods .good .imgbag span {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  text-align: center;
+  padding: 3px 12px;
+  border-radius: 10px;
+  font-size: 10px;
+  background: rgba(246, 112, 31, 0.8);
+  color: #FFFFFF;
+}
+.goods .good .goodinfo {
+  margin-left: 110px;
+  line-height: 33px;
+  font-size: 10px;
+}
+.goods .good .goodinfo .sales {
+  font-size: 16px;
+  float: right;
+  color: #f6701f;
+  margin-right: 20px;
+}

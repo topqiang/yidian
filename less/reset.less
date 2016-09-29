@@ -1,0 +1,166 @@
+@charset "utf-8";
+@r:246;
+@g:112;
+@b:31;
+@a:0.8;
+@toph:50px;
+@fc:#666;
+@bgc:#F5F8FA;
+.content{
+    background: @bgc;
+}
+.pore{
+    position: relative;
+}
+.poab{
+    position: absolute;
+}
+.bgz{
+    background: rgb(@r,@g,@b);
+}
+.colz{
+    color: rgb(@r,@g,@b);
+}
+.fr{
+   float: right; 
+}
+.fl{
+    float: left;
+}
+.bgza{
+    background: rgba(@r,@g,@b,@a);
+}
+.bgb{
+    background: #fff;
+}
+.colb{
+    color: #FFFFFF;
+}
+.bor(@color){
+    border: 1px solid @color;
+}
+.disf{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+.fs-10{
+    font-size:10px;
+}
+.fs-14{
+    font-size: 14px;
+}
+.fs-16{
+    font-size: 16px;
+}
+.labelimg(@url,@height){
+    height: @height;
+    line-height: @height;
+    padding-left: 50px;
+    background: url(@url) 13px center no-repeat;
+    background-size: 24px 24px;
+}
+header{
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    div.local{
+        .colb;
+        .labelimg('../img/locb.png',@toph);
+    }
+}
+.label{
+    height: @toph;
+    .labelimg('../img/jian.png',@toph);
+}
+//首页
+.focus1{
+    background: rgba(0,0,0,0) !important;
+    & > div{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.focus1 span{
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.6);
+    &.current{
+        .bgb;
+    }
+}
+.xqnav{
+    padding: 20px 0px;
+    color: @fc;
+    .fs-10;
+    margin-bottom: 10px;
+    .disf;
+    .bgb;
+    > div{
+       width: 25%;
+       img{
+           width: 60%;
+           margin-left: 20%;
+       }
+       span{
+           display: block;
+           text-align: center;
+       }
+    }
+}
+.ad{
+   .disf; 
+    > div{
+       width: 50%;
+       img{
+           width: 100%;
+       }
+    }
+}
+.goods{
+    .bgb;
+    padding-left: 20px;
+    .good{
+        padding: 10px 0px;
+        height: 120px;
+        border-bottom: 1px solid #e6e6e6;
+        .imgbag{
+            .fl;
+            .pore;
+            width: 100px;
+            height: 100px;
+            padding: 3px;
+            .bor(#e6e6e6);
+            img{
+                height: 100%;
+                width: 100%;
+            }
+            span{
+                .poab;
+                bottom:5px;
+                left: 5px;
+                text-align: center;
+                padding: 3px 12px;      
+                border-radius: 10px;
+                .fs-10;
+                .bgza;
+                .colb;
+            }
+        }
+        .goodinfo{
+            margin-left: 110px;
+            line-height: 33px;
+            .fs-10;
+            .sales{
+                .fs-16;
+                .fr;
+                .colz;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
