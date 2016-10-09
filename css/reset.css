@@ -64,6 +64,52 @@ header div.local {
   background: url('../img/jian.png') 13px center no-repeat;
   background-size: 24px 24px;
 }
+footer {
+  background: #f5f8fa;
+  height: 60px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+footer > div {
+  width: 33%;
+  padding-top: 40px;
+}
+footer > div.on {
+  color: #f6701f;
+}
+footer > div:nth-child(1) {
+  background: url('../img/index.png') center 10px no-repeat;
+  background-size: auto 30px;
+}
+footer > div:nth-child(1).on {
+  background: url('../img/indexon.png') center 10px no-repeat;
+  background-size: auto 30px;
+}
+footer > div:nth-child(2) {
+  background: url('../img/order.png') center 10px no-repeat;
+  background-size: auto 30px;
+}
+footer > div:nth-child(2).on {
+  background: url('../img/orderon.png') center 10px no-repeat;
+  background-size: auto 30px;
+}
+footer > div:nth-child(3) {
+  background: url('../img/self.png') center 10px no-repeat;
+  background-size: auto 30px;
+}
+footer > div:nth-child(3).on {
+  background: url('../img/selfon.png') center 10px no-repeat;
+  background-size: auto 30px;
+}
+footer > div span {
+  font-size: 10px;
+  display: block;
+  text-align: center;
+}
 .focus1 {
   background: rgba(0, 0, 0, 0) !important;
 }
@@ -82,7 +128,7 @@ header div.local {
   background: #fff;
 }
 .xqnav {
-  padding: 20px 0px;
+  padding-bottom: 10px;
   color: #666666;
   font-size: 10px;
   margin-bottom: 10px;
@@ -93,6 +139,7 @@ header div.local {
 }
 .xqnav > div {
   width: 25%;
+  margin-top: 10px;
 }
 .xqnav > div img {
   width: 60%;
@@ -110,17 +157,31 @@ header div.local {
 .ad > div {
   width: 50%;
 }
+.ad > div:first-child {
+  border-bottom: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+}
+.ad > div:last-child {
+  margin-left: -1px;
+  margin-top: -1px;
+  border-top: 1px solid #e1e1e1;
+  border-left: 1px solid #e1e1e1;
+}
 .ad > div img {
   width: 100%;
 }
 .goods {
   background: #fff;
   padding-left: 20px;
+  margin-bottom: 60px;
 }
 .goods .good {
   padding: 10px 0px;
   height: 120px;
   border-bottom: 1px solid #e6e6e6;
+}
+.goods .good.stop {
+  opacity: 0.5;
 }
 .goods .good .imgbag {
   float: left;
@@ -150,9 +211,32 @@ header div.local {
   line-height: 33px;
   font-size: 10px;
 }
+.goods .good .goodinfo .goodname {
+  font-size: 14px;
+}
+.goods .good .goodinfo .level img {
+  margin-top: 11px;
+  width: 10px;
+}
 .goods .good .goodinfo .sales {
   font-size: 16px;
   float: right;
   color: #f6701f;
   margin-right: 20px;
+}
+.goods .good .goodinfo .payinfo span {
+  padding: 0px 5px;
+  border-left: 1px solid #E1E1E1;
+}
+.goods .good .goodinfo .payinfo span:first-child {
+  border-left: 0px;
+  padding-left: 0px;
+}
+.goods .good .goodinfo .payinfo span font {
+  color: red;
+}
+.goods .good .goodinfo .payinfo span.time {
+  padding-left: 20px;
+  background: url('../img/time.png') 5px center no-repeat;
+  background-size: 10px auto;
 }
