@@ -1,6 +1,13 @@
 @charset "utf-8";
+body {
+  background: #f5f8fa;
+}
 .content {
   background: #f5f8fa;
+  margin-bottom: 50px;
+}
+.textcen {
+  text-align: center;
 }
 .pore {
   position: relative;
@@ -26,36 +33,46 @@
 .bgb {
   background: #fff;
 }
+.bgf {
+  background: #f2f2f2;
+}
 .colb {
   color: #FFFFFF;
+}
+.cole {
+  color: #dcdcdc;
 }
 .disf {
   display: flex;
   justify-content: space-around;
   flex-flow: wrap;
 }
-.fs-10 {
-  font-size: 10px;
+.ovhid {
+  overflow: hidden;
 }
-.fs-14 {
-  font-size: 14px;
-}
-.fs-16 {
-  font-size: 16px;
+.mar60 {
+  margin-right: 60px;
 }
 header {
   position: fixed;
   top: 0px;
   z-index: 10;
   width: 100%;
+  color: #FFFFFF;
 }
 header div.local {
-  color: #FFFFFF;
   height: 50px;
   line-height: 50px;
   padding-left: 50px;
   background: url('../img/locb.png') 13px center no-repeat;
   background-size: 24px 24px;
+}
+header div.left {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 36px;
+  background: url('../img/left.png') 13px center no-repeat;
+  background-size: 10px 20px;
 }
 .label {
   height: 50px;
@@ -73,6 +90,7 @@ footer {
   display: flex;
   justify-content: space-around;
   flex-flow: wrap;
+  border-top: 1px solid #D8D8D8;
 }
 footer > div {
   width: 33%;
@@ -109,6 +127,188 @@ footer > div span {
   font-size: 10px;
   display: block;
   text-align: center;
+}
+.gley {
+  height: 50px;
+  line-height: 50px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  color: #dadada;
+  padding-left: 20px;
+  background: #fff;
+}
+.gley .stopmsg {
+  display: none;
+}
+.gley .gleybtn {
+  float: right;
+  text-align: center;
+  color: #FFFFFF;
+  width: 80px;
+  background: #f6701f;
+}
+.gley.stop .stopmsg {
+  display: inline-block;
+}
+.gley.stop .gleycon {
+  display: none;
+}
+.gley.stop .gleybtn {
+  background: #dadada;
+}
+.gleycon {
+  height: 50px;
+  line-height: 50px;
+  position: absolute;
+  left: 20px;
+  top: 0px;
+  right: 0px;
+  padding-left: 40px;
+  color: #dcdcdc;
+  background: url('../img/gleyon.png') 0px center no-repeat;
+  background-size: 30px 30px;
+}
+.gleycon font {
+  font-size: 18px;
+  color: #f6701f;
+}
+.phone {
+  background: url('../img/phone.png') 10px center no-repeat;
+  background-size: 25px 30px;
+}
+.code {
+  background: url('../img/code.png') 10px center no-repeat;
+  background-size: 25px 30px;
+}
+.unlock {
+  background: url('../img/unlock.png') 10px center no-repeat;
+  background-size: 25px 30px;
+}
+.coupon {
+  background: url('../img/coupon.png') 10px center no-repeat;
+  background-size: 25px 25px;
+}
+.money {
+  background: url('../img/money.png') 10px center no-repeat;
+  background-size: 25px 30px;
+}
+.address {
+  background: url('../img/address.png') 10px center no-repeat;
+  background-size: 25px 30px;
+}
+.keep {
+  background: url('../img/keep.png') 10px center no-repeat;
+  background-size: 25px 30px;
+}
+.right {
+  padding: 25px 15px;
+  background: url('../img/right.png') 0px center no-repeat;
+  background-size: 10px 20px;
+}
+.iconlu {
+  background: url('../img/iconlu.png') 0px center no-repeat;
+  background-size: 8px 8px;
+}
+.check {
+  background: url('../img/check.png') 20px center no-repeat;
+  background-size: 20px 20px;
+}
+.check.on {
+  background: url('../img/checkon.png') 20px center no-repeat;
+  background-size: 20px 20px;
+}
+.getcode {
+  margin-top: 10px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0px 10px;
+  float: right;
+  color: #FFFFFF;
+  text-align: center;
+  background: #f6701f;
+  border-radius: 4px;
+}
+.big-btn {
+  margin-top: 50px;
+  font-size: 20px;
+  width: 90%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-left: 5%;
+  border-radius: 4px;
+}
+.line {
+  padding: 0px 5px;
+  margin-top: 20px;
+  background: #fff;
+  border-bottom: 1px solid #d8d8d8;
+  border-top: 1px solid #d8d8d8;
+}
+.line > div {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #d8d8d8;
+  padding-left: 40px;
+}
+.line > div:last-child {
+  border-bottom: 0px;
+}
+.lined {
+  padding: 0px 20px;
+  margin-top: 0px;
+  background: #fff;
+  border-bottom: 1px solid #d8d8d8;
+  border-top: 1px solid #d8d8d8;
+}
+.lined > div {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 2px dotted #d8d8d8;
+  padding-left: 20px;
+}
+.lined > div:last-child {
+  border-bottom: 0px;
+}
+.lines {
+  padding: 0px 20px;
+  margin-top: 0px;
+  background: #fff;
+  border-bottom: 1px solid #d8d8d8;
+  border-top: 1px solid #d8d8d8;
+}
+.lines > div {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #d8d8d8;
+  padding-left: 0px;
+}
+.lines > div:last-child {
+  border-bottom: 0px;
+}
+.line0d {
+  padding: 0px 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  background: #fff;
+  border-bottom: 1px solid #d8d8d8;
+  border-top: 1px solid #d8d8d8;
+}
+.line0d > div {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 2px dotted #d8d8d8;
+  padding-left: 0px;
+}
+.line0d > div:last-child {
+  border-bottom: 0px;
+}
+.labtitle {
+  height: 50px;
+  line-height: 50px;
+  margin-left: 20px;
 }
 .focus1 {
   background: rgba(0, 0, 0, 0) !important;
@@ -173,17 +373,16 @@ footer > div span {
 .goods {
   background: #fff;
   padding-left: 20px;
-  margin-bottom: 60px;
 }
-.goods .good {
+.good {
   padding: 10px 0px;
   height: 120px;
   border-bottom: 1px solid #e6e6e6;
 }
-.goods .good.stop {
+.good.stop {
   opacity: 0.5;
 }
-.goods .good .imgbag {
+.imgbag {
   float: left;
   position: relative;
   width: 100px;
@@ -191,11 +390,11 @@ footer > div span {
   padding: 3px;
   border: 1px solid #e6e6e6;
 }
-.goods .good .imgbag img {
+.imgbag img {
   height: 100%;
   width: 100%;
 }
-.goods .good .imgbag span {
+.imgbag span {
   position: absolute;
   bottom: 5px;
   left: 5px;
@@ -206,37 +405,190 @@ footer > div span {
   background: rgba(246, 112, 31, 0.8);
   color: #FFFFFF;
 }
-.goods .good .goodinfo {
+.goodinfo {
   margin-left: 110px;
   line-height: 33px;
   font-size: 10px;
 }
-.goods .good .goodinfo .goodname {
+.goodinfo .goodname {
   font-size: 14px;
 }
-.goods .good .goodinfo .level img {
+.goodinfo .level img {
   margin-top: 11px;
   width: 10px;
 }
-.goods .good .goodinfo .sales {
+.goodinfo .sales {
   font-size: 16px;
   float: right;
   color: #f6701f;
   margin-right: 20px;
 }
-.goods .good .goodinfo .payinfo span {
+.goodinfo .payinfo span {
   padding: 0px 5px;
   border-left: 1px solid #E1E1E1;
 }
-.goods .good .goodinfo .payinfo span:first-child {
+.goodinfo .payinfo span:first-child {
   border-left: 0px;
   padding-left: 0px;
 }
-.goods .good .goodinfo .payinfo span font {
+.goodinfo .payinfo span font {
   color: red;
 }
-.goods .good .goodinfo .payinfo span.time {
+.goodinfo .payinfo span.time {
   padding-left: 20px;
   background: url('../img/time.png') 5px center no-repeat;
   background-size: 10px auto;
+}
+.cheord {
+  padding: 5px 0px;
+  margin-top: 50px;
+  background: #fff;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+.shopbar {
+  margin-top: 50px;
+  height: 40px;
+  line-height: 40px;
+  background: #fff;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+  text-align: center;
+}
+.shopbar div {
+  width: 25%;
+}
+.shopbar div:nth-child(2) {
+  width: 50%;
+}
+.shopbar div.on {
+  border-bottom: 2px solid #f6701f;
+}
+.tab {
+  overflow: hidden;
+}
+.classify {
+  float: left;
+  width: 25%;
+  background: #f8f8f8;
+}
+.classify div {
+  font-size: 12px;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #dadada;
+}
+.classify div.on {
+  background: #fff;
+}
+.conmain {
+  float: right;
+  width: 75%;
+}
+.conmain > div {
+  padding: 0px 10px;
+}
+.conmain .contitle {
+  height: 30px;
+  line-height: 30px;
+}
+.conmain .warelist {
+  background: #fff;
+}
+.ware {
+  padding: 10px 0px;
+  height: 100px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.ware.stop {
+  opacity: 0.5;
+}
+.wareimg {
+  float: left;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.wareimg img {
+  height: 100%;
+  width: 100%;
+}
+.wareinfo {
+  color: #dcdcdc;
+  margin-left: 90px;
+  line-height: 27px;
+}
+.wareinfo .warename {
+  color: #000000;
+}
+.wareinfo .price font {
+  color: #f6701f;
+}
+.wareinfo .price span {
+  margin-top: 7px;
+  float: right;
+  padding: 10px 15px;
+  background: url('../img/add.png') center center no-repeat;
+  background-size: 20px 20px;
+}
+.selftop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.selftop > div {
+  width: 80px;
+  border-radius: 40px;
+}
+.selftop > div img {
+  width: 100%;
+}
+.selftop > div span {
+  color: #FFFFFF;
+  display: block;
+  text-align: center;
+}
+.iconset {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  padding: 10px;
+  background: url('../img/set.png') 0px 0px no-repeat;
+  background-size: 20px 20px;
+}
+.xingout {
+  padding: 10px;
+  margin-right: 5px;
+  background: url('../img/xingout.png') center center no-repeat;
+  background-size: 20px 20px;
+}
+.xingout.on {
+  background: url('../img/xingon.png') center center no-repeat;
+  background-size: 20px 20px;
+}
+.ratecon {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  padding: 10px;
+  background: #f2f2f2;
+  margin-bottom: 20px;
+}
+.pstime {
+  padding-left: 10px;
+  border-radius: 10px;
+  height: 50px;
+  line-height: 50px;
+  background: #f2f2f2;
+}
+.selpstime {
+  opacity: 0;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
 }
