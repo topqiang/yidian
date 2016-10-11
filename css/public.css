@@ -38,7 +38,7 @@ a:active {star:expression(this.onFocus=this.blur());}
 	width: 100%;
 }
 .pad0-20{
-	padding: 0px 20px;
+	padding: 0px 20px !important;
 }
 .pad20{
 	padding: 20px;
@@ -54,6 +54,9 @@ a:active {star:expression(this.onFocus=this.blur());}
 }
 .lh25{
 	line-height: 25px;
+}
+.lh30{
+	line-height: 30px;
 }
 .lh14{
 	line-height: 14px;
@@ -103,8 +106,14 @@ a:active {star:expression(this.onFocus=this.blur());}
 .mar5{
 	margin-right: 5px;
 }
+.mar30{
+	margin-right: 30px;
+}
 .bore31{
 	border-right: 1px solid #e3e3e3;
+}
+.borb31{
+	border-bottom: 1px solid #e3e3e3;
 }
 .fs16{
 	font-size: 16px;
