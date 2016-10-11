@@ -38,7 +38,7 @@ body{
     background: rgba(@r,@g,@b,@a);
 }
 .bgb{
-    background: #fff;
+    background: #fff !important;
 }
 .bgf{
     background: #f2f2f2;
@@ -47,15 +47,32 @@ body{
     color: #FFFFFF;
 }
 .cole{
-    color: #dcdcdc;
+    color: #767676;
+}
+.mat10{
+    margin-top: 10px !important;
 }
 .bor(@color){
     border: 1px solid @color;
+}
+.texovh{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 .disf{
     display: flex;
     justify-content: space-around;
     flex-flow: wrap;
+}
+.colf{
+    color: #f3cc00;
+}
+.colg{
+    color: #42bdcc;
+}
+.disn{
+    display: none;
 }
 .ovhid{
     overflow: hidden;
@@ -70,6 +87,9 @@ body{
 .bgimg(@url,@x,@y,@width,@height){
     background: url(@url) @x @y no-repeat;
     background-size: @width @height;
+}
+.textrig{
+    text-align: right;
 }
 .mar60{
     margin-right: 60px;
@@ -89,10 +109,12 @@ header{
     div.local{
         .labelimg('../img/locb.png',@toph);
     }
-    div.left{
+    div{
         .lh(@toph);
         padding-left: 36px;
-        .bgimg('../img/left.png',13px,center,10px,20px);
+        &.left{
+            .bgimg('../img/left.png',13px,center,10px,20px);
+        }
     }
 }
 .label{
@@ -153,7 +175,7 @@ footer{
         .fr;
         .textcen;
         .colb;
-        width: 80px;
+        padding: 0px 25px;
         .bgz;
     }
     &.stop{
@@ -168,19 +190,58 @@ footer{
         }
     }
 }
+.ingley{
+    padding: 25px 20px;
+    .bgimg('../img/gleyon.png',0px,center,30px,30px);
+    .subnum{
+        top: 20px;
+        left: 23px;
+        width: 12px;
+        .lh(12px);
+        .bgz;
+        .colb;
+        .fs(6px);
+        .textcen;
+        border-radius: 5px;
+    }
+}
+.smbtn{
+    padding: 2px 5px;
+    .colb;
+    .bgz;
+    border-radius: 5px;
+}
+.lmbtn{
+    padding: 5px 20px;
+    .colb;
+    .bgz;
+    .fs(16px);
+    border-radius: 5px;
+}
 .gleycon{
     .lh(50px);
     position: absolute;
     left: 20px;
     top: 0px;
     right: 0px;
-    padding-left: 40px;
     .cole;
-    .bgimg('../img/gleyon.png',0px,center,30px,30px);
     font{
         .fs(18px);
         .colz;
     }
+}
+.icongley{
+   .bgimg('../img/gley.png',0px,center,50px,50px); 
+}
+.iconjian{
+   .bgimg('../img/jiannum.png',center,center,20px,20px); 
+}
+.iconzan{
+    padding-left: 25px;
+    .bgimg('../img/zan.png',0px,center,20px,20px); 
+}
+.iconadd{
+   .bgimg('../img/add.png',center,center,20px,20px); 
 }
 .phone{
     .bgimg('../img/phone.png',10px,center,25px,30px);
@@ -191,16 +252,58 @@ footer{
 .unlock{
     .bgimg('../img/unlock.png',10px,center,25px,30px);
 }
-.coupon{
+.iconcoupon{
     .bgimg('../img/coupon.png',10px,center,25px,25px);
 }
-.money{
+.iconmoney{
     .bgimg('../img/money.png',10px,center,25px,30px);
 }
-.address{
+.iconaddre{
+    .bgimg('../img/addre.png',10px,center,20px,20px);
+}
+.iconaddr{
+    padding-right: 15px;
+    .bgimg('../img/addre.png',right,center,15px,15px);
+}
+.icontel{
+    .bgimg('../img/tel.png',10px,center,20px,20px);
+}
+.icontelr{
+    display: inline-block;
+    padding-right: 15px;
+    .bgimg('../img/tel.png',right,center,15px,15px);
+}
+.iconedi{
+    .bgimg('../img/edit.png',10px,center,20px,20px);
+}
+.icondel{
+    .bgimg('../img/del.png',10px,center,20px,20px);
+}
+.iconwifi{
+    .bgimg('../img/wifi.png',0px,center,20px,20px);
+}
+.iconsann{
+    .bgimg('../img/sann.png',0px,center,20px,20px);
+}
+.iconpadd{
+    .bgimg('../img/padd.png',0px,center,20px,20px);
+}
+.iconcuif{
+    .bgimg('../img/cuif.png',0px,center,20px,20px);
+}
+.iconaddress{
     .bgimg('../img/address.png',10px,center,25px,30px);
 }
-.keep{
+.iconwx{
+    .bgimg('../img/wx.png',0px,center,auto,30px);
+}
+.iconzfb{
+    .bgimg('../img/zfb.png',0px,center,auto,30px);
+}
+.iconye{
+    .bgimg('../img/ye.png',0px,center,auto,30px);
+}
+.iconkeep{
     .bgimg('../img/keep.png',10px,center,25px,30px);
 }
 .right{
@@ -243,8 +346,8 @@ footer{
 .line(@left:40px,@top:20px,@px:1px,@solid:solid){
     margin-top: @top;
     .bgb;
-    border-bottom: 1px solid #d8d8d8;
-    border-top: 1px solid #d8d8d8;
+//  border-bottom: 1px solid #d8d8d8;
+//  border-top: 1px solid #d8d8d8;
     >div{
         .lh(50px);
         border-bottom: @px @solid #d8d8d8;
@@ -257,6 +360,13 @@ footer{
 .line{
     padding: 0px 5px;
     .line;
+}
+.shopline{
+    .fs(12px);
+    .line(40px,10px,2px,dotted);
+}
+.orderline{
+    .line(20px,10px);
 }
 .lined{
     padding: 0px 20px;
@@ -357,6 +467,7 @@ footer{
     height: 100px;
     padding: 3px;
     .bor(#e6e6e6);
+    margin-right: 10px;
     img{
         height: 100%;
         width: 100%;
@@ -375,7 +486,6 @@ footer{
 } 
 //店铺信息
 .goodinfo{
-    margin-left: 110px;
     line-height: 33px;
     .fs(10px);
     .goodname{
@@ -425,7 +535,7 @@ footer{
     div{
         width: 25%;
         &:nth-child(2){
-            width: 50%;
+            margin: 0px 12.5%;
         }
         &.on{
             border-bottom:2px solid rgb(@r,@g,@b);
@@ -498,6 +608,7 @@ footer{
 }
 //个人中心页
 .selftop{
+    background-size: 100% 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -550,4 +661,213 @@ footer{
     top: 0px;
     bottom: 0px;
     width: 100%;
+}
+//商品详情下的商品信息
+.noinshop{
+    margin-left: 0px;
+    padding: 10px;
+}
+.togley{
+    padding: 25px 25px;
+}
+.playgley{
+    .disf;
+    .lh(20px);
+    .textcen;
+    color: #000000;
+    width: 90px;
+    margin-top: 15px;
+    span{
+        width: 20px;
+    }
+}
+
+//评价列表
+.ratelist{
+    margin-top: 10px;
+    .bgb;
+    padding: 0px 20px;
+    .goodinfo{
+        border-bottom: 1px dotted #D8D8D8;
+        .level{
+            .cole;
+        }
+        .time{
+            .cole;  
+        }
+        .payinfo{
+            .colz;
+            .localname{
+                width: 70%;
+                .texovh;
+            }
+        }
+    }
+}
+//商家信息
+.loadshop{
+    background-size: 100% 100%;
+    .opainfo{
+        padding: 15px 5px;
+        height: 80px;
+        line-height: 25px;
+        background: url('../img/vline.png') center center no-repeat rgba(0,0,0,0.3);
+        background-size: 1px 25px;
+        .textcen;
+        .fs(12px);
+        .colb;
+        .disf;
+        >div{
+            width: 50%;
+        }
+        font{
+            .fs(20px);
+        }
+    }
+}
+.manna{
+    padding: 10px 0px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .sname{
+        .fs(24px);
+    }
+    .level img{
+//      margin-top: 5px;
+        width: 15px;
+    }
+    .otime{
+        .fs(12px);
+    }
+}
+.ordaddress{
+    .bgb;
+    height: 120px;
+    border-image:url('../img/borimg.png')15 repeat;
+}
+//新建收获地址
+.newadd{
+    padding-left: 90px;
+    .lh(120px);
+    .bgimg('../img/newadd.png',25px,center,50px,auto);
+}
+.ediadd{
+    padding: 30px 40px 30px 60px;
+    height: 120px;
+    line-height: 30px;
+    .bgimg('../img/addre.png',25px,center,20px,auto);
+    >div{
+       .texovh; 
+    }
+}
+.addAdd{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+.address{
+    .bgb;
+    margin-bottom: 10px;
+    > div{
+        padding: 0px 20px;
+        .lh(40px);
+        .texovh;
+    }
+    .playadd{
+        border-top: 1px solid #E1E1E1;
+        span{
+            padding-left: 40px;
+        }
+    }
+}
+.paymoney{
+    height: 100px;
+    padding: 25px;
+    line-height: 25px;
+    .textcen;
+    .bgimg('../img/paybg.png',0px,0px,100%,100px);
+}
+.paytype{
+    padding-left: 20px;
+    > div{
+        .iconcheck{
+            padding: 25px 15px;
+            .bgimg('../img/checkracon.png',0px,center,20px,20px);
+        }
+        &.on{
+            .iconcheck{
+                .bgimg('../img/checkrac.png',0px,center,20px,20px);
+            }
+        }
+    }
+}
+.hotel{
+    height: 120px;
+    .bgb;
+    .hotellevel{
+        .fr;
+        width: 100px;
+        margin-top: 20px;
+        height: 80px;
+        border-left: 1px solid #D8D8D8;
+    }
+}
+.hotelinfo{
+    padding: 0px 110px 0px 20px;
+    .fs(12px);
+    line-height: 20px;
+    >div{
+      .texovh;  
+    }
+    .hotelname{
+        .lh(40px);
+        .fs(16px);
+    }
+    .hotelfuwu{
+        span{
+            margin-right: 10px;
+            margin-top: 10px;
+            padding: 10px;
+        }
+    }
+}
+//入住时间
+.intime{
+    margin: 20px;
+    height: 60px;
+    background: url('../img/vline.png') center center no-repeat #fff;
+    background-size: 1px 25px;
+    .textcen;
+    line-height: 30px;
+}
+//房型
+.houstype{
+   .bgb;
+   margin-bottom: 10px;
+   padding: 0px 20px;
+   > div{
+       .lh(50px);
+   }
+}
+//房间列表
+.houslist{
+    border-bottom: 1px solid #D8D8D8;
+    li{
+        border-top: 1px solid #D8D8D8;
+        padding: 5px 0px;
+        div{
+            .texovh;
+            padding: 5px 0px;
+        }
+    }
+}
+.housargs{
+    .fs(12px);
+    span:nth-child(2){
+        margin-left: 10px;
+        padding-left: 10px;
+        border-left: 1px solid #D8D8D8;
+    }          
 }

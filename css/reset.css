@@ -31,7 +31,7 @@ body {
   background: rgba(246, 112, 31, 0.8);
 }
 .bgb {
-  background: #fff;
+  background: #fff !important;
 }
 .bgf {
   background: #f2f2f2;
@@ -40,15 +40,35 @@ body {
   color: #FFFFFF;
 }
 .cole {
-  color: #dcdcdc;
+  color: #767676;
+}
+.mat10 {
+  margin-top: 10px !important;
+}
+.texovh {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .disf {
   display: flex;
   justify-content: space-around;
   flex-flow: wrap;
 }
+.colf {
+  color: #f3cc00;
+}
+.colg {
+  color: #42bdcc;
+}
+.disn {
+  display: none;
+}
 .ovhid {
   overflow: hidden;
+}
+.textrig {
+  text-align: right;
 }
 .mar60 {
   margin-right: 60px;
@@ -67,10 +87,12 @@ header div.local {
   background: url('../img/locb.png') 13px center no-repeat;
   background-size: 24px 24px;
 }
-header div.left {
+header div {
   height: 50px;
   line-height: 50px;
   padding-left: 36px;
+}
+header div.left {
   background: url('../img/left.png') 13px center no-repeat;
   background-size: 10px 20px;
 }
@@ -136,7 +158,7 @@ footer > div span {
   width: 100%;
   color: #dadada;
   padding-left: 20px;
-  background: #fff;
+  background: #fff !important;
 }
 .gley .stopmsg {
   display: none;
@@ -145,7 +167,7 @@ footer > div span {
   float: right;
   text-align: center;
   color: #FFFFFF;
-  width: 80px;
+  padding: 0px 25px;
   background: #f6701f;
 }
 .gley.stop .stopmsg {
@@ -157,6 +179,36 @@ footer > div span {
 .gley.stop .gleybtn {
   background: #dadada;
 }
+.ingley {
+  padding: 25px 20px;
+  background: url('../img/gleyon.png') 0px center no-repeat;
+  background-size: 30px 30px;
+}
+.ingley .subnum {
+  top: 20px;
+  left: 23px;
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  background: #f6701f;
+  color: #FFFFFF;
+  font-size: 6px;
+  text-align: center;
+  border-radius: 5px;
+}
+.smbtn {
+  padding: 2px 5px;
+  color: #FFFFFF;
+  background: #f6701f;
+  border-radius: 5px;
+}
+.lmbtn {
+  padding: 5px 20px;
+  color: #FFFFFF;
+  background: #f6701f;
+  font-size: 16px;
+  border-radius: 5px;
+}
 .gleycon {
   height: 50px;
   line-height: 50px;
@@ -164,14 +216,28 @@ footer > div span {
   left: 20px;
   top: 0px;
   right: 0px;
-  padding-left: 40px;
-  color: #dcdcdc;
-  background: url('../img/gleyon.png') 0px center no-repeat;
-  background-size: 30px 30px;
+  color: #767676;
 }
 .gleycon font {
   font-size: 18px;
   color: #f6701f;
+}
+.icongley {
+  background: url('../img/gley.png') 0px center no-repeat;
+  background-size: 50px 50px;
+}
+.iconjian {
+  background: url('../img/jiannum.png') center center no-repeat;
+  background-size: 20px 20px;
+}
+.iconzan {
+  padding-left: 25px;
+  background: url('../img/zan.png') 0px center no-repeat;
+  background-size: 20px 20px;
+}
+.iconadd {
+  background: url('../img/add.png') center center no-repeat;
+  background-size: 20px 20px;
 }
 .phone {
   background: url('../img/phone.png') 10px center no-repeat;
@@ -185,19 +251,74 @@ footer > div span {
   background: url('../img/unlock.png') 10px center no-repeat;
   background-size: 25px 30px;
 }
-.coupon {
+.iconcoupon {
   background: url('../img/coupon.png') 10px center no-repeat;
   background-size: 25px 25px;
 }
-.money {
+.iconmoney {
   background: url('../img/money.png') 10px center no-repeat;
   background-size: 25px 30px;
 }
-.address {
+.iconaddre {
+  background: url('../img/addre.png') 10px center no-repeat;
+  background-size: 20px 20px;
+}
+.iconaddr {
+  padding-right: 15px;
+  background: url('../img/addre.png') right center no-repeat;
+  background-size: 15px 15px;
+}
+.icontel {
+  background: url('../img/tel.png') 10px center no-repeat;
+  background-size: 20px 20px;
+}
+.icontelr {
+  display: inline-block;
+  padding-right: 15px;
+  background: url('../img/tel.png') right center no-repeat;
+  background-size: 15px 15px;
+}
+.iconedi {
+  background: url('../img/edit.png') 10px center no-repeat;
+  background-size: 20px 20px;
+}
+.icondel {
+  background: url('../img/del.png') 10px center no-repeat;
+  background-size: 20px 20px;
+}
+.iconwifi {
+  background: url('../img/wifi.png') 0px center no-repeat;
+  background-size: 20px 20px;
+}
+.iconsann {
+  background: url('../img/sann.png') 0px center no-repeat;
+  background-size: 20px 20px;
+}
+.iconpadd {
+  background: url('../img/padd.png') 0px center no-repeat;
+  background-size: 20px 20px;
+}
+.iconcuif {
+  background: url('../img/cuif.png') 0px center no-repeat;
+  background-size: 20px 20px;
+}
+.iconaddress {
   background: url('../img/address.png') 10px center no-repeat;
   background-size: 25px 30px;
 }
-.keep {
+.iconwx {
+  background: url('../img/wx.png') 0px center no-repeat;
+  background-size: auto 30px;
+}
+.iconzfb {
+  background: url('../img/zfb.png') 0px center no-repeat;
+  background-size: auto 30px;
+}
+.iconye {
+  background: url('../img/ye.png') 0px center no-repeat;
+  background-size: auto 30px;
+}
+.iconkeep {
   background: url('../img/keep.png') 10px center no-repeat;
   background-size: 25px 30px;
 }
@@ -243,9 +364,7 @@ footer > div span {
 .line {
   padding: 0px 5px;
   margin-top: 20px;
-  background: #fff;
-  border-bottom: 1px solid #d8d8d8;
-  border-top: 1px solid #d8d8d8;
+  background: #fff !important;
 }
 .line > div {
   height: 50px;
@@ -256,12 +375,37 @@ footer > div span {
 .line > div:last-child {
   border-bottom: 0px;
 }
+.shopline {
+  font-size: 12px;
+  margin-top: 10px;
+  background: #fff !important;
+}
+.shopline > div {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 2px dotted #d8d8d8;
+  padding-left: 40px;
+}
+.shopline > div:last-child {
+  border-bottom: 0px;
+}
+.orderline {
+  margin-top: 10px;
+  background: #fff !important;
+}
+.orderline > div {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #d8d8d8;
+  padding-left: 20px;
+}
+.orderline > div:last-child {
+  border-bottom: 0px;
+}
 .lined {
   padding: 0px 20px;
   margin-top: 0px;
-  background: #fff;
-  border-bottom: 1px solid #d8d8d8;
-  border-top: 1px solid #d8d8d8;
+  background: #fff !important;
 }
 .lined > div {
   height: 50px;
@@ -275,9 +419,7 @@ footer > div span {
 .lines {
   padding: 0px 20px;
   margin-top: 0px;
-  background: #fff;
-  border-bottom: 1px solid #d8d8d8;
-  border-top: 1px solid #d8d8d8;
+  background: #fff !important;
 }
 .lines > div {
   height: 50px;
@@ -292,9 +434,7 @@ footer > div span {
   padding: 0px 20px;
   margin-bottom: 10px;
   margin-top: 10px;
-  background: #fff;
-  border-bottom: 1px solid #d8d8d8;
-  border-top: 1px solid #d8d8d8;
+  background: #fff !important;
 }
 .line0d > div {
   height: 50px;
@@ -325,7 +465,7 @@ footer > div span {
   background: rgba(0, 0, 0, 0.6);
 }
 .focus1 span.current {
-  background: #fff;
+  background: #fff !important;
 }
 .xqnav {
   padding-bottom: 10px;
@@ -335,7 +475,7 @@ footer > div span {
   display: flex;
   justify-content: space-around;
   flex-flow: wrap;
-  background: #fff;
+  background: #fff !important;
 }
 .xqnav > div {
   width: 25%;
@@ -371,7 +511,7 @@ footer > div span {
   width: 100%;
 }
 .goods {
-  background: #fff;
+  background: #fff !important;
   padding-left: 20px;
 }
 .good {
@@ -389,6 +529,7 @@ footer > div span {
   height: 100px;
   padding: 3px;
   border: 1px solid #e6e6e6;
+  margin-right: 10px;
 }
 .imgbag img {
   height: 100%;
@@ -406,7 +547,6 @@ footer > div span {
   color: #FFFFFF;
 }
 .goodinfo {
-  margin-left: 110px;
   line-height: 33px;
   font-size: 10px;
 }
@@ -442,7 +582,7 @@ footer > div span {
 .cheord {
   padding: 5px 0px;
   margin-top: 50px;
-  background: #fff;
+  background: #fff !important;
   margin-bottom: 10px;
   display: flex;
   justify-content: space-around;
@@ -452,7 +592,7 @@ footer > div span {
   margin-top: 50px;
   height: 40px;
   line-height: 40px;
-  background: #fff;
+  background: #fff !important;
   display: flex;
   justify-content: space-around;
   flex-flow: wrap;
@@ -462,7 +602,7 @@ footer > div span {
   width: 25%;
 }
 .shopbar div:nth-child(2) {
-  width: 50%;
+  margin: 0px 12.5%;
 }
 .shopbar div.on {
   border-bottom: 2px solid #f6701f;
@@ -483,7 +623,7 @@ footer > div span {
   border-bottom: 1px solid #dadada;
 }
 .classify div.on {
-  background: #fff;
+  background: #fff !important;
 }
 .conmain {
   float: right;
@@ -497,7 +637,7 @@ footer > div span {
   line-height: 30px;
 }
 .conmain .warelist {
-  background: #fff;
+  background: #fff !important;
 }
 .ware {
   padding: 10px 0px;
@@ -518,7 +658,7 @@ footer > div span {
   width: 100%;
 }
 .wareinfo {
-  color: #dcdcdc;
+  color: #767676;
   margin-left: 90px;
   line-height: 27px;
 }
@@ -536,6 +676,7 @@ footer > div span {
   background-size: 20px 20px;
 }
 .selftop {
+  background-size: 100% 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -591,4 +732,222 @@ footer > div span {
   top: 0px;
   bottom: 0px;
   width: 100%;
+}
+.noinshop {
+  margin-left: 0px;
+  padding: 10px;
+}
+.togley {
+  padding: 25px 25px;
+}
+.playgley {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  width: 90px;
+  margin-top: 15px;
+}
+.playgley span {
+  width: 20px;
+}
+.ratelist {
+  margin-top: 10px;
+  background: #fff !important;
+  padding: 0px 20px;
+}
+.ratelist .goodinfo {
+  border-bottom: 1px dotted #D8D8D8;
+}
+.ratelist .goodinfo .level {
+  color: #767676;
+}
+.ratelist .goodinfo .time {
+  color: #767676;
+}
+.ratelist .goodinfo .payinfo {
+  color: #f6701f;
+}
+.ratelist .goodinfo .payinfo .localname {
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.loadshop {
+  background-size: 100% 100%;
+}
+.loadshop .opainfo {
+  padding: 15px 5px;
+  height: 80px;
+  line-height: 25px;
+  background: url('../img/vline.png') center center no-repeat rgba(0, 0, 0, 0.3);
+  background-size: 1px 25px;
+  text-align: center;
+  font-size: 12px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+.loadshop .opainfo > div {
+  width: 50%;
+}
+.loadshop .opainfo font {
+  font-size: 20px;
+}
+.manna {
+  padding: 10px 0px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.manna .sname {
+  font-size: 24px;
+}
+.manna .level img {
+  width: 15px;
+}
+.manna .otime {
+  font-size: 12px;
+}
+.ordaddress {
+  background: #fff !important;
+  height: 120px;
+  border-image: url('../img/borimg.png') 15 repeat;
+}
+.newadd {
+  padding-left: 90px;
+  height: 120px;
+  line-height: 120px;
+  background: url('../img/newadd.png') 25px center no-repeat;
+  background-size: 50px auto;
+}
+.ediadd {
+  padding: 30px 40px 30px 60px;
+  height: 120px;
+  line-height: 30px;
+  background: url('../img/addre.png') 25px center no-repeat;
+  background-size: 20px auto;
+}
+.ediadd > div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.addAdd {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+.address {
+  background: #fff !important;
+  margin-bottom: 10px;
+}
+.address > div {
+  padding: 0px 20px;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.address .playadd {
+  border-top: 1px solid #E1E1E1;
+}
+.address .playadd span {
+  padding-left: 40px;
+}
+.paymoney {
+  height: 100px;
+  padding: 25px;
+  line-height: 25px;
+  text-align: center;
+  background: url('../img/paybg.png') 0px 0px no-repeat;
+  background-size: 100% 100px;
+}
+.paytype {
+  padding-left: 20px;
+}
+.paytype > div .iconcheck {
+  padding: 25px 15px;
+  background: url('../img/checkracon.png') 0px center no-repeat;
+  background-size: 20px 20px;
+}
+.paytype > div.on .iconcheck {
+  background: url('../img/checkrac.png') 0px center no-repeat;
+  background-size: 20px 20px;
+}
+.hotel {
+  height: 120px;
+  background: #fff !important;
+}
+.hotel .hotellevel {
+  float: right;
+  width: 100px;
+  margin-top: 20px;
+  height: 80px;
+  border-left: 1px solid #D8D8D8;
+}
+.hotelinfo {
+  padding: 0px 110px 0px 20px;
+  font-size: 12px;
+  line-height: 20px;
+}
+.hotelinfo > div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.hotelinfo .hotelname {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+}
+.hotelinfo .hotelfuwu span {
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+.intime {
+  margin: 20px;
+  height: 60px;
+  background: url('../img/vline.png') center center no-repeat #ffffff;
+  background-size: 1px 25px;
+  text-align: center;
+  line-height: 30px;
+}
+.houstype {
+  background: #fff !important;
+  margin-bottom: 10px;
+  padding: 0px 20px;
+}
+.houstype > div {
+  height: 50px;
+  line-height: 50px;
+}
+.houslist {
+  border-bottom: 1px solid #D8D8D8;
+}
+.houslist li {
+  border-top: 1px solid #D8D8D8;
+  padding: 5px 0px;
+}
+.houslist li div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 5px 0px;
+}
+.housargs {
+  font-size: 12px;
+}
+.housargs span:nth-child(2) {
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid #D8D8D8;
 }
