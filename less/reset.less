@@ -94,11 +94,22 @@ body{
 .mar60{
     margin-right: 60px;
 }
+.borbtn{
+    padding: 5px 20px;
+    border-radius: 4px;
+    border: 1px solid rgb(@r,@g,@b);
+}
 .labelimg(@url,@height){
     .lh(@height);
     padding-left: 50px;
     background: url(@url) 13px center no-repeat;
     background-size: 24px 24px;
+}
+.botarea{
+    height: 50px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
 }
 header{
     position: fixed;
@@ -211,12 +222,19 @@ footer{
     .bgz;
     border-radius: 5px;
 }
+.leftitle{
+    display: inline-block;
+    width: 100px;
+}
 .lmbtn{
     padding: 5px 20px;
     .colb;
     .bgz;
     .fs(16px);
     border-radius: 5px;
+}
+.bge{
+    background: #E1E1E1 !important;
 }
 .gleycon{
     .lh(50px);
@@ -870,4 +888,30 @@ footer{
         padding-left: 10px;
         border-left: 1px solid #D8D8D8;
     }          
+}
+.order{
+    .fs(12px);
+    > div{
+       padding: 0px 10px; 
+       .texovh;
+    }
+    .oname{
+        .lh(40px);
+    }
+    .oinfo{
+        padding: 10px 10px; 
+        border-bottom: 1px solid #D8D8D8;
+        border-top: 1px solid #D8D8D8;
+        img{
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .ginfo{
+        line-height: 30px;
+        padding: 10px 0px 10px 100px;
+    }
+    .btnarea{
+        height: 50px;
+    }
 }

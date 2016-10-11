@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>订单详情</title>
+        <title>提交订单</title>
         <!-- Sets initial viewport load and disables zooming  -->
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
         <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
@@ -17,54 +17,36 @@
     </head>
     <body>
     	<header class="bgz">
-    		<div class="left">订单详情</div>
+    		<div class="left">提交订单</div>
     	</header>
     	<div class="content" style="padding: 50px 0px 10px;">
-    		<div class="ordaddress mat10">
-    			<span class="right fr" style="margin-top: 33px;"></span>
-    			<!-- 新建地址 -->
-    			<div class="newadd disn">
-    				请新建收货地址~
-    			</div>
-    			<!-- 已有地址    修改地址-->
-    			<div class="ediadd">
-    				<div>
-    					收货人：张涛
-    					<span class="fr mar5">1888888888</span>
-    				</div>
-    				<div>收货地址：天津市南开区鑫茂科技园B区1号楼1809</div>
-    			</div>
-    		</div>
     		<div class="orderline">
-		  		<div class="pore pstime bgb">
-		  			<span class="right fr"></span><span class="fr mar5">18:30</span>送达时间
-		  			<select class="poab selpstime">
-    					<option>立即送出</option>
-    					<option>16:50</option>
-    					<option>16:50</option>
-    					<option>16:50</option>
-    					<option>16:50</option>
-    					<option>16:50</option>
-    					<option>16:50</option>
-    				</select>
+		  		<div class="bgb">
+		  			<span class="right fr"></span><span class="fr mar5 colg">8月29日</span>入住时间
 		  		</div>
 		  	</div>
 		  	<div class="orderline">
-		  		<div><span class="fr pad0-20">在线支付</span>支付方式</div>
+		  		<div class="bgb">
+		  			<span class="right fr"></span><span class="fr mar5 colg">8月30日</span>离店时间
+		  		</div>
 		  	</div>
     		<div class="lines mat10">
-	    		<div>备注</div>
-		  		<div class="cole fs12">多拿双筷子，少辣椒</div>
+	    		<div><span class="leftitle">入住人</span><span>凌华</span></div>
+		  		<div><span class="leftitle">联系手机</span><span>18200336666</span></div>
 	    	</div>
-	    	<div class="lined mat10">
-	    		<div class="iconlu">黄焖鸡小份<span class="fr">￥20</span><span class="fr mar60">X1</span></div>
-		  		<div class="iconlu">米饭<span class="fr">￥20</span><span class="fr mar60">X1</span></div>
-		  		<div class="iconlu">西红柿鸡蛋汤<span class="fr">￥5</span><span class="fr mar60">X1</span></div>
-	    	</div>
-	    	<div class="line0d">
-	    		<div>配送费<span class="fr">￥5</span></div>
-		  		<div><span class="fr">总计:<font class="colz">￥50</font></span></div>
-	    	</div>
+	    	
+	    	<ul class="houslist mat10 pad0-20 bgb" style="border-bottom: 0px;">
+	   			<li style="border-top: 0px;">
+	   				<div>大床房A</div>
+	   				<div class="cole housargs">
+	   					<span>不含早</span>
+	   					<span>无窗</span>
+	   				</div>
+	   				<div class="colz">￥<span class="fs16">169</span><span class="fr">X1</span></div>
+	   			</li>
+		   	</ul>
+		   	
+		   	<div class="pad20 textcen cole fs12">提交订单后，请等待商家接单，再付款</div>
     	</div>
     	
     	<!--确认订单-->

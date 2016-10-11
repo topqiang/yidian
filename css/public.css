@@ -82,6 +82,9 @@ a:active {star:expression(this.onFocus=this.blur());}
 .fs12{
 	font-size: 12px;
 }
+.fs24{
+	font-size: 24px;
+}
 .fcfb{
 	color: #fb8a38;
 }

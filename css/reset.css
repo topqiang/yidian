@@ -73,6 +73,17 @@ body {
 .mar60 {
   margin-right: 60px;
 }
+.borbtn {
+  padding: 5px 20px;
+  border-radius: 4px;
+  border: 1px solid #f6701f;
+}
+.botarea {
+  height: 50px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
 header {
   position: fixed;
   top: 0px;
@@ -202,12 +213,19 @@ footer > div span {
   background: #f6701f;
   border-radius: 5px;
 }
+.leftitle {
+  display: inline-block;
+  width: 100px;
+}
 .lmbtn {
   padding: 5px 20px;
   color: #FFFFFF;
   background: #f6701f;
   font-size: 16px;
   border-radius: 5px;
+}
+.bge {
+  background: #E1E1E1 !important;
 }
 .gleycon {
   height: 50px;
@@ -950,4 +968,33 @@ footer > div span {
   margin-left: 10px;
   padding-left: 10px;
   border-left: 1px solid #D8D8D8;
+}
+.order {
+  font-size: 12px;
+}
+.order > div {
+  padding: 0px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.order .oname {
+  height: 40px;
+  line-height: 40px;
+}
+.order .oinfo {
+  padding: 10px 10px;
+  border-bottom: 1px solid #D8D8D8;
+  border-top: 1px solid #D8D8D8;
+}
+.order .oinfo img {
+  width: 80px;
+  height: 80px;
+}
+.order .ginfo {
+  line-height: 30px;
+  padding: 10px 0px 10px 100px;
+}
+.order .btnarea {
+  height: 50px;
 }
