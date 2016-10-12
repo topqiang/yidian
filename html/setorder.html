@@ -7,10 +7,12 @@
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
         <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
         <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="format-detection" content="telephone=no" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <link rel="stylesheet" href="../css/public.css" />
         <link href="../css/reset.css" rel="stylesheet"/>
         <script src="//cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+        <script src="../js/public.js" type="text/javascript"></script>
         <style>
         	
         </style>
@@ -37,8 +39,8 @@
     		</div>
     		<div class="orderline">
 		  		<div class="pore pstime bgb">
-		  			<span class="right fr"></span><span class="fr mar5">18:30</span>送达时间
-		  			<select class="poab selpstime">
+		  			<span class="right fr"></span><span class="fr mar5" ele="time">18:30</span>送达时间
+		  			<select class="poab selpstime" forele="time">
     					<option>立即送出</option>
     					<option>16:50</option>
     					<option>16:50</option>

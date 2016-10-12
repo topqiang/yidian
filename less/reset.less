@@ -175,7 +175,7 @@ footer{
 .zhao{
     position: fixed;
     z-index: 9;
-    top: 0px;
+    bottom: 0px;
     left: 0px;
     width: 100%;
     height: 100%;
@@ -291,6 +291,16 @@ footer{
 .iconzan{
     padding-left: 25px;
     .bgimg('../img/zan.png',0px,center,20px,20px); 
+}
+.iconpche{
+    padding-left: 30px;
+    .bgimg('../img/pche.png',left,center,30px,30px);
+}
+.iconsanj{
+    .bgimg('../img/sanj.png',right,center,5px,5px);
+    &.on{
+        .bgimg('../img/sanjon.png',right,center,5px,5px);
+    }
 }
 .iconadd{
    .bgimg('../img/add.png',center,center,20px,20px); 
@@ -430,7 +440,7 @@ footer{
 }
 .line{
     input{
-        width: 100%;
+        width: auto;
     }
     padding: 0px 5px;
     .line;
@@ -447,7 +457,7 @@ footer{
     .line(20px,0px,2px,dotted);
 }
 .formline{
-    .line(10px,10px);
+    .line(10px,0px);
 }
 .lines{
     padding: 0px 20px;
@@ -712,7 +722,7 @@ footer{
 //评价
 .xingout{
     padding: 10px;
-    margin-right: 5px;
+    margin-right: 10px;
     .bgimg('../img/xingout.png',center,center,20px,20px);
     &.on{
         .bgimg('../img/xingon.png',center,center,20px,20px);
@@ -921,6 +931,9 @@ footer{
     background-size: 1px 25px;
     .textcen;
     line-height: 30px;
+    > div{
+        width: 50%;
+    }
 }
 //房型
 .houstype{

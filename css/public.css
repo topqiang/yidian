@@ -85,6 +85,9 @@ a:active {star:expression(this.onFocus=this.blur());}
 .fs12{
 	font-size: 12px;
 }
+.fs14{
+	font-size: 14px;
+}
 .fs24{
 	font-size: 24px;
 }
@@ -118,4 +121,6 @@ a:active {star:expression(this.onFocus=this.blur());}
 .fs16{
 	font-size: 16px;
 }
-
+#laydate_box{
+	left: 40px !important;
+}

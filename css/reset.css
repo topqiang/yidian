@@ -164,7 +164,7 @@ footer > div span {
 .zhao {
   position: fixed;
   z-index: 9;
-  top: 0px;
+  bottom: 0px;
   left: 0px;
   width: 100%;
   height: 100%;
@@ -287,6 +287,19 @@ footer > div span {
   padding-left: 25px;
   background: url('../img/zan.png') 0px center no-repeat;
   background-size: 20px 20px;
+}
+.iconpche {
+  padding-left: 30px;
+  background: url('../img/pche.png') left center no-repeat;
+  background-size: 30px 30px;
+}
+.iconsanj {
+  background: url('../img/sanj.png') right center no-repeat;
+  background-size: 5px 5px;
+}
+.iconsanj.on {
+  background: url('../img/sanjon.png') right center no-repeat;
+  background-size: 5px 5px;
 }
 .iconadd {
   background: url('../img/add.png') center center no-repeat;
@@ -445,7 +458,7 @@ footer > div span {
   background: #fff !important;
 }
 .line input {
-  width: 100%;
+  width: auto;
 }
 .line > div {
   height: 50px;
@@ -498,7 +511,7 @@ footer > div span {
   border-bottom: 0px;
 }
 .formline {
-  margin-top: 10px;
+  margin-top: 0px;
   background: #fff !important;
 }
 .formline > div {
@@ -797,7 +810,7 @@ footer > div span {
 }
 .xingout {
   padding: 10px;
-  margin-right: 5px;
+  margin-right: 10px;
   background: url('../img/xingout.png') center center no-repeat;
   background-size: 20px 20px;
 }
@@ -1019,6 +1032,9 @@ footer > div span {
   background-size: 1px 25px;
   text-align: center;
   line-height: 30px;
+}
+.intime > div {
+  width: 50%;
 }
 .houstype {
   background: #fff !important;

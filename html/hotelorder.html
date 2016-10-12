@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="../css/public.css" />
         <link href="../css/reset.css" rel="stylesheet"/>
         <script src="//cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+        <script type="text/javascript" src="../js/laydate/laydate.js"></script>
         <style>
         	
         </style>
@@ -22,12 +23,12 @@
     	<div class="content" style="padding: 50px 0px 10px;">
     		<div class="orderline">
 		  		<div class="bgb">
-		  			<span class="right fr"></span><span class="fr mar5 colg">8月29日</span>入住时间
+		  			<span class="right fr"></span><span class="fr mar5 colg" id="start">2016-10-29</span>入住时间
 		  		</div>
 		  	</div>
 		  	<div class="orderline">
 		  		<div class="bgb">
-		  			<span class="right fr"></span><span class="fr mar5 colg">8月30日</span>离店时间
+		  			<span class="right fr"></span><span class="fr mar5 colg" id="end">2016-10-30</span>离店时间
 		  		</div>
 		  	</div>
     		<div class="lines mat10">
@@ -59,4 +60,33 @@
 			</div>
 		</div>
     </body>
+    <script type="text/javascript">
+		var start = {
+		  elem: '#start',
+		  format: 'YYYY-MM-DD',
+		  min: laydate.now(), //设定最小日期为当前日期
+		  max: '2099-06-16', //最大日期
+		  istime: false,
+		  istoday: true,
+		  fixed: true, 
+		  choose: function(datas){
+		     end.min = datas; //开始日选好后，重置结束日的最小日期
+		 	end.start = datas //将结束日的初始值设定为开始日
+		  }
+		};
+		var end = {
+		  elem: '#end',
+		  format: 'YYYY-MM-DD',
+		  min: laydate.now(),
+		  max: '2099-06-16',
+		  istime: false,
+		  istoday: true,
+		  fixed: true, 
+		  choose: function(datas){
+		    start.max = datas; //结束日选好后，重置开始日的最大日期
+		  }
+		};
+		laydate(start);
+		laydate(end);
+	</script>
 </html>
