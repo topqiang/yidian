@@ -10,11 +10,33 @@ function top_linkto(){
 		if( url == ""){
 			return;
 		}
-		if( url.valueOf(".") != -1){
-			url = "http://"+url;
+		//匹配全路径跳转
+		if( url.indexOf("http://") == 0 || url.indexOf("https://") == 0 ){
+			window.location.href = url;
+		}else if( url.indexOf("/") == 0 ){
+			//匹配   类似于Thinkphp类型的URL {:U('Index/index')} => /项目名/index.php/Index/index  
+			var hostname = getRootPath();
+			url = hostname + url;
+			window.location.href = url;
+		}else if( url.indexOf("javascript:") == 0){
+			var start = url.indexOf(":");
+			var str = url.substring(start+1);
+			eval(str);
+		}else if( url.indexOf("./") == 0 || url.indexOf("/") == -1){
+			//匹配静态跳转，已经相对路径跳转。
+			var curUrl = window.location.href;
+			url = curUrl.substr(0,curUrl.lastIndexOf("/")+1) + url;
+			window.location.href = url;
 		}
-		window.location.href = url;
 	});
+}
+function getRootPath(){
+    var curWwwPath=window.document.location.href;
+    var pathName=window.document.location.pathname;
+    var pos=curWwwPath.indexOf(pathName);
+    var localhostPaht=curWwwPath.substring(0,pos);
+    var projectName=pathName.substring(0,pathName.substr(1).indexOf('/')+1);
+    return(localhostPaht+projectName);
 }
 /**
  * @name check响应
@@ -57,9 +79,11 @@ function top_rate(){
  * @version 1.0
  * **/
 function top_ingley(){
-	$(".ingley").on('click',function(){
-		$(".zhao").toggle();
-		$(".zhcon").slideToggle();
+	$(".gley .icongley").on('click',function(){
+		if($(this).parents('.gley').hasClass('on')){
+			$(".zhao").toggleClass('disn');
+			$(".zhcon").toggleClass('disn');
+		}
 	});
 }
 /**
